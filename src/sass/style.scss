@@ -1,0 +1,31 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+@import "normalize/import-now";
+@import "hamburgers/hamburger-settings";
+@import "hamburgers/hamburgers";
+@import "animate.scss";
+
+@import "blocks/button";
+@import "blocks/section";
+@import "blocks/about";
+@import "blocks/feedback";
+@import "blocks/form";
+@import "blocks/get-design";
+@import "blocks/input-field";
+@import "blocks/logo";
+@import "blocks/main-nav";
+@import "blocks/nav-tabs";
+@import "blocks/our-service";
+@import "blocks/page-content";
+@import "blocks/page-footer";
+@import "blocks/page-header";
+@import "blocks/page-wrapper";
+@import "blocks/portfolio-slider";
+@import "blocks/reviews-slider";
+@import "blocks/service";
+@import "blocks/slider";
+@import "blocks/socials";
+@import "blocks/success-steps";
+@import "blocks/work-stages";

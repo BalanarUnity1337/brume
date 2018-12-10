@@ -1,0 +1,37 @@
+.socials {
+  @include ul-reset();
+}
+
+.socials__item {
+
+}
+
+.socials__item-link {
+  display: block;
+
+  background-repeat: no-repeat;
+
+  font-size: 0;
+  text-decoration: none;
+
+  &--vk {
+    background-image: url("../img/icons/icon-vk.png");
+  }
+
+  &--insta {
+    background-image: url("../img/icons/icon-instagram.png");
+  }
+
+  &--fb {
+    background-image: url("../img/icons/icon-facebook.png");
+  }
+}
+
+@media #{$tablet-width} {
+
+}
+
+@media #{$desktop-width} {
+
+}
+

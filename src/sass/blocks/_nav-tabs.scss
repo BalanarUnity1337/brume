@@ -1,0 +1,23 @@
+.nav-tabs {
+
+}
+
+.nav-tabs__tab {
+  display: inline-block;
+
+  font-size: 22px;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+@media #{$tablet-width} {
+
+}
+
+@media #{$desktop-width} {
+  .nav-tabs__tab {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+

@@ -1,0 +1,140 @@
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  visibility: hidden;
+  padding-top: 120px;
+  padding-bottom: 79px;
+
+  background-color: #112537;
+
+  &.active {
+    visibility: visible;
+  }
+}
+
+.main-nav__list {
+  @include ul-reset();
+}
+
+.main-nav__list-item {
+  margin-bottom: 39px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.main-nav__list-item-link {
+  display: block;
+
+  opacity: 0.93;
+  transition: color 0.3s ease, opacity 0.3s ease;
+
+  font-size: 20px;
+  line-height: 1em;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 1;
+
+    color: #f8a25a;
+  }
+}
+
+@media #{$tablet-width} {
+  .main-nav {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+
+    padding-top: 232px;
+    padding-bottom: 183px;
+
+    // background-color: #112537;
+  }
+
+  .main-nav__list {
+    // @include ul-reset();
+  }
+
+  .main-nav__list-item {
+    margin-bottom: 64px;
+
+    &:last-of-type {
+      // margin-bottom: 0;
+    }
+  }
+
+  .main-nav__list-item-link {
+    // display: block;
+
+    // transition: color 0.3s ease;
+
+    font-size: 35px;
+    // line-height: 1em;
+    // font-weight: 600;
+    // color: #ffffff;
+    // text-decoration: none;
+    // text-align: center;
+    // text-transform: uppercase;
+
+    &:hover {
+      // color: #f8a25a;
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .main-nav {
+    // position: absolute;
+    top: 100%;
+    left: 95px;
+    // right: 0;
+
+    width: 1170px;
+    padding-top: 137px;
+    padding-bottom: 139px;
+
+    // background-color: #112537;
+  }
+
+  .main-nav__list {
+    // @include ul-reset();
+  }
+
+  .main-nav__list-item {
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      // margin-bottom: 0;
+    }
+  }
+
+  .main-nav__list-item-link {
+    // display: block;
+
+    opacity: 0.5;
+    // transition: color 0.3s ease;
+
+    font-size: 20px;
+    // line-height: 1em;
+    // font-weight: 600;
+    // color: #ffffff;
+    // text-decoration: none;
+    // text-align: center;
+    // text-transform: uppercase;
+
+    &:hover {
+      // color: #f8a25a;
+    }
+  }
+}
+

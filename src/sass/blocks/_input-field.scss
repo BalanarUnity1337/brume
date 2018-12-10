@@ -1,0 +1,46 @@
+.input-field {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 13px 4px;
+
+  border: none;
+  border-bottom: 2px solid rgba(#fde5d1, 0.7);
+  background-color: transparent;
+
+  font-family: inherit;
+  font-weight: 300;
+  color: #ffffff;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 1em;
+    color: rgba(#ffffff, 0.8);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@media #{$tablet-width} {
+  .input-field {
+    padding: 14px 4px;
+
+    &::placeholder {
+      color: rgba(#ffffff, 0.6);
+    }
+  }
+}
+
+@media #{$desktop-width} {
+  .input-field {
+    padding: 13px 4px;
+
+    font-size: 14px;
+
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+}
+

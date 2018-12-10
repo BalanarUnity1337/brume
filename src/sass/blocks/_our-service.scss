@@ -1,0 +1,17 @@
+.our-service {
+  @include ul-reset();
+
+  margin-top: 61px;
+}
+
+@media #{$tablet-width} {
+  .our-service {
+    margin-top: 91px;
+  }
+}
+
+@media #{$desktop-width} {
+  .our-service {
+    margin-top: 0;
+  }
+}

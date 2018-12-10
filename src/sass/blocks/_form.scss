@@ -1,0 +1,145 @@
+.form {
+
+}
+
+.form__row {
+  margin-bottom: 46px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &--user {
+
+  }
+
+  &--phone {
+
+  }
+
+  &--email {
+
+  }
+}
+
+@media #{$tablet-width} {
+  .form {
+
+  }
+
+  .form__row {
+    margin-bottom: 31px;
+
+    &:last-of-type {
+      // margin-bottom: 0;
+    }
+
+    &--user {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 2px;
+
+        width: 18px;
+        height: 20px;
+
+        opacity: 0.6;
+        background-image: url("../img/icons/icon-user.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &--phone {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 2px;
+
+        width: 20px;
+        height: 20px;
+
+        opacity: 0.6;
+        background-image: url("../img/icons/icon-phone.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &--email {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 13px;
+        right: 0;
+
+        width: 22px;
+        height: 16px;
+
+        opacity: 0.6;
+        background-image: url("../img/icons/icon-mail.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  .form__row--user .input-field,
+  .form__row--phone .input-field,
+  .form__row--email .input-field {
+    padding-right: 30px;
+  }
+}
+
+@media #{$desktop-width} {
+  .form {
+
+  }
+
+  .form__row {
+    margin-bottom: 25px;
+
+    &:last-of-type {
+      // margin-bottom: 0;
+    }
+
+    &--user {
+
+
+      &::before {
+
+      }
+    }
+
+    &--phone {
+
+
+      &::before {
+
+      }
+    }
+
+    &--email {
+
+
+      &::before {
+
+      }
+    }
+  }
+
+  .form__row--user .input-field,
+  .form__row--phone .input-field,
+  .form__row--email .input-field {
+
+  }
+}
+

@@ -1,0 +1,137 @@
+.about {
+  max-width: 292px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__play {
+  position: absolute;
+  top: 226px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 84px;
+  height: 84px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(#febc80, 0.95);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 31px;
+    left: 36px;
+
+    border-left: 18px solid #ffffff;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 38px;
+
+    border-left: 12px solid rgba(#febc80, 0.95);
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+  }
+
+  &:hover {
+    transform: translateX(-50%) scale(1.1);
+  }
+}
+
+.about__text {
+  margin: 0;
+  padding-top: 336px;
+
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+@media #{$tablet-width} {
+  .about {
+    max-width: 470px;
+  }
+
+  .about__play {
+    top: 312px;
+
+    width: 128px;
+    height: 128px;
+
+    &::before {
+      top: 48px;
+      left: 54px;
+
+      border-left-width: 29px;
+      border-top-width: 16px;
+      border-bottom-width: 16px;
+    }
+
+    &::after {
+      top: 53px;
+      left: 57px;
+
+      border-left-width: 21px;
+      border-top-width: 11px;
+      border-bottom-width: 11px;
+    }
+  }
+
+  .about__text {
+    padding-top: 474px;
+  }
+}
+
+@media #{$desktop-width} {
+  .about {
+    max-width: 555px;
+  }
+
+  .about__play {
+    top: 234px;
+
+    width: 84px;
+    height: 84px;
+
+    &::before {
+      top: 31px;
+      left: 36px;
+
+      border-left-width: 18px;
+      border-top-width: 11px;
+      border-bottom-width: 11px;
+    }
+
+    &::after {
+      top: 35px;
+      left: 38px;
+
+      border-left-width: 12px;
+      border-top-width: 7px;
+      border-bottom-width: 7px;
+    }
+  }
+
+  .about__text {
+    padding-top: 342px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
